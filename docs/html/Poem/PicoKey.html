@@ -252,6 +252,29 @@
 <p>以下のサイトを参考にさせていただきました。</p>
 <ul class="list1 list-indent1"><li>格安でUSBセキュリティキーを作る
 <a href="https://note.com/idgooa/n/nfee7298e5fbf" rel="nofollow">https://note.com/idgooa/n/nfee7298e5fbf</a></li></ul>
+<p><br /></p>
+<hr class="full_hr" />
+<ul class="list1 list-indent1"><li>パスキーでも乗っ取られる！3つの弱点＆Googleアカウントセキュリティ強化
+<a href="https://www.youtube.com/watch?v=8lFLjHuj9RU" rel="nofollow">https://www.youtube.com/watch?v=8lFLjHuj9RU</a>
+<ul class="list2 list-indent1"><li>Googleアカウントのパスキー／パスワードはクラウド同期を切ること。（攻撃者に利用させない）</li>
+<li>但し、切る前にしないといけないことがある</li></ul></li></ul>
+<p>1. 各サービスのバックアップコードを保管する バックアップコードは、認証アプリが使えなくなった時のための使い捨ての鍵で、2段階認証を設定しているサービスの「セキュリティ」や「2段階認証」の設定画面から出せます（Googleアカウントなら セキュリティ→2段階認証プロセス→バックアップコードが10個出ます） 使ったコードは無効になるので、残りが減ってきたら作り直す</p>
+<p>保管は紙に書いてスマホと別の場所か、パスワード管理アプリ スマホの写真やメモに入れると、スマホと一緒に失くします スマホの写真で保管の場合はクラウド（iCloudやGoogleフォト）に自動でバックアップされたりして危険 サービスによってはバックアップコードが無いので、その場合はパスキーやSMSなど別のログイン方法を先に設定しておく （SMSは最後の手段。安全な順はパスキー＞認証アプリ＞SMS）</p>
+<p>2. 予備のスマホにコードを移す 今のスマホの認証システムで、左上の ≡ → コードを移行 → コードをエクスポート → 移すアカウントを選んで「次へ」でQRコードが出ます（数が多いとQRが複数枚になります） 予備のスマホに認証システムを入れて、最初の画面で「アカウントなしで使用」を選び、≡ → コードを移行 → コードをインポート → QRコードをスキャン で読み取る このQRにはコードの元になる秘密の値が全部入っているので、スクショを撮らない、人に送らない、読み取ったら画面を閉じる エクスポートしても今のスマホからコードは消えないので、両方で同じコードが出れば成功です（これは機種変更した時も同じように移行できます）</p>
+<p>3. 最後に同期を切る 右上のプロフィール → 「アカウントなしで認証システムを使用する」→ 続行 これでGoogleアカウント側に保存されていたコードは全部削除されて、今のスマホの中だけに残ります 右上の雲のアイコンに斜線が入れば、切れています</p>
+<p>以降は機種変更のたびに2の手順で自分で移す必要があるので、予備のスマホが無い人は、切らずにGoogleアカウントのセキュリティをパスキーかセキュリティキーで頑丈にする選択もあります</p>
+<hr class="full_hr" />
+<p><br /></p>
+
+<div class="jumpmenu"><a href="#navigator">&uarr;</a></div><h2 id="content_1_9">伝えたかった事<a class="anchor_super" id="hb2bc485" href="#hb2bc485" title="hb2bc485" style="user-select:none;">&dagger;</a></h2>
+<ul class="list1 list-indent1"><li>パスワード認証を停止して、2FAに切り替えよう</li>
+<li>2FA のデバイスはいろいろあるので、複数の手段、デバイスを確保して、アカウントアクセス出来なくなる障害に備えよう。</li>
+<li>そのためには、
+<ul class="list2 list-indent1"><li>余っているラズピコ基板はFIDO2デバイスとして、まあまあ役に立ちそう。<br />
+（間違ってファームと鍵を別用途で上書きしないようにね）</li>
+<li>機種変や型落ちなどで、もう使わなくなったスマホ・タブレット端末でも、一応整備すれば、Google Authenticatorやパスキーの予備端末にすることは出来るよ。<br />
+（メイン使用のスマホが壊れても、アカウントリカバリーに使えるよ）</li></ul></li></ul>
+<p><br /></p>
    </div>
   </div>
  </div>
@@ -266,7 +289,7 @@
    <a href="http://pukiwiki.sourceforge.jp/dev/"><img src="../../image/b_pukiwiki.dev.png" alt="PukiWiki-dev" /></a>
   </div>
   <div id="f-list">
-   <ul><li id="lastmod">Last-modified: 2026-10-29 (木) 12:33:33<span class="page_passage" data-mtime="2026-10-29T03:33:33+00:00"></span></li><li>Site admin: <a href="http://pukiwiki.example.com/">anonymous</a></li>    <li>Powered by PukiWiki</li>
+   <ul><li id="lastmod">Last-modified: 2026-10-29 (木) 15:16:36<span class="page_passage" data-mtime="2026-10-29T06:16:36+00:00"></span></li><li>Site admin: <a href="http://pukiwiki.example.com/">anonymous</a></li>    <li>Powered by PukiWiki</li>
     <li><a href="http://www.luntf.com/">Monobook for PukiWiki</a></li>
    </ul>
   </div>
